@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const subjectError = document.getElementById("subjectError");
             const messagetError = document.getElementById("messagetError");
 
-            // Name validation
             if (!name.value.trim() || !/^[a-zA-Z ]+$/.test(name.value)) {
                 name.classList.add("is-invalid");
                 nameError.textContent = "Please enter a valid name.";
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 nameError.textContent = "";
             }
 
-            // Email validation
             if (!mail.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail.value)) {
                 mail.classList.add("is-invalid");
                 mailError.textContent = "Please enter a valid email.";
@@ -37,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 mailError.textContent = "";
             }
 
-            // Subject validation
             if (!para.value.trim()) {
                 para.classList.add("is-invalid");
                 subjectError.textContent = "Subject is required.";
@@ -48,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 subjectError.textContent = "";
             }
 
-            // Message validation
             if (!message.value.trim()) {
                 message.classList.add("is-invalid");
                 messagetError.textContent = "Message cannot be empty.";
@@ -66,14 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Buy Now buttons
     document.querySelectorAll("#buyNow_button1, #buy_button3").forEach(button => {
         button.addEventListener("click", () => {
             alert("Item added to cart!");
         });
     });
 
-    // View More buttons
     document.querySelectorAll("#view_button2").forEach(button => {
         button.addEventListener("click", () => {
             alert("More details will be available soon!");
