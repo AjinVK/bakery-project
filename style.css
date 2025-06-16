@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #F8F9FA, #d0c5d6);
+}
+
+.nav-link {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgb(47, 255, 95);
+}
+
+.btn {
+    border-color: 5px solid rgb(47, 255, 95) !important;
+}
+
+.navbar-brand {
+    color: rgb(47, 255, 95) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent(52, 52, 52, 0.217);
+    border-radius: 8%;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#buyNow_button1,
+#view_button2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#buyNow_button1:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    transform: translate(-1px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#view_button2:hover {
+    background-color: #14822e;
+    color: white;
+    transform: translate(-1px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#cakeCarousel img {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cardHover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+}
+
+.cardHover:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#buy_button3 {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#buy_button3:hover {
+  background-color: #d61717;
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+
+#contact_para {
+    font-size: 12px;
+}
+
+#contact_detail {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+#contact_detail:hover {
+    background-color: rgb(8, 134, 67);
+    transform: translate(-1px) scale(1.00);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid rgb(8, 134, 67);
+}
+
+#send_message {
+    background-color: rgb(8, 134, 67) !important;
+    color: white !important;
+}
+
+#send_message {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#send_message:hover {
+    color: white;
+    transform: translate(-1px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
