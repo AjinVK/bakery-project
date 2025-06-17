@@ -47,16 +47,16 @@ h1 {
 }
 
 #buyNow_button1:hover {
-    background-color: rgb(60, 60, 60);
+    background-color: rgba(0, 0, 0, 0.886);
     color: white;
     transform: translate(-1px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #view_button2:hover {
-    background-color: #14822e;
+    background-color: #9c411bda;
     color: white;
-    transform: translate(-1px) scale(1.05);
+    /* transform: translate(-1px) scale(1.05); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -75,15 +75,15 @@ h1 {
 }
 
 #buy_button3 {
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 #buy_button3:hover {
-  background-color: #d61717;
-  color: #ffffff;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    background-color: #d61717;
+    color: #ffffff;
+    /* transform: translateY(-2px) scale(1.05); */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -98,9 +98,10 @@ h1 {
 
 #contact_detail:hover {
     background-color: rgb(8, 134, 67);
-    transform: translate(-1px) scale(1.00);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* transform: translate(-1px) scale(1.00); */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.146);
     border: none;
+    /* transition: all 0.3s ease-in-out; */
     color: white;
 }
 
@@ -136,4 +137,23 @@ h1 {
     color: white;
     transform: translate(-1px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
 }
