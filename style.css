@@ -107,7 +107,6 @@ h1 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 #contact_para {
     font-size: 12px;
 }
@@ -115,6 +114,14 @@ h1 {
 #contact_detail {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
+    height: 28rem;
+}
+
+@media (max-width: 992px) {
+    #contact_detail {
+        height: 23rem;
+        margin-bottom: 10%;
+    }
 }
 
 #contact_detail:hover {
@@ -124,6 +131,16 @@ h1 {
     border: none;
     transition: all 0.1s ease-in-out;
     color: white;
+}
+
+#contact-card {
+    height: 28rem;
+}
+
+@media (max-width: 992px) {
+    #contact-card {
+        height: 31.5rem;
+    }
 }
 
 .form-label {

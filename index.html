@@ -305,7 +305,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-xs-6 col-lg-4">
-                            <div class="card" id="contact_detail" style="height: 28rem;">
+                            <div class="card" id="contact_detail">
                                 <div class="card-body mt-5">
                                     <h5 class="card-title">Contact Information</h5>
                                     <p class="card-text fw-light" id="contact_para">Have a question or a custom order in
@@ -320,13 +320,13 @@
                             </div>
                         </div>
                         <div class="col-xs-6 col-lg-8">
-                            <div class="card" style="height: 28rem;">
+                            <div class="card" id="contact-card">
                                 <div class="card-body">
                                     <form id="myForm" novalidate>
                                         <div class="row">
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-floating">
-                                                    <input type="text" id="name" class="form-control w-75"
+                                                    <input type="text" id="name" class="form-control"
                                                         placeholder="Your Name" required pattern="[a-z,A-Z ]">
                                                     <label for="name" class="form-label">Your Name :</label>
                                                     <div id="nameError" class="invalid-feedback"></div>
@@ -334,7 +334,7 @@
                                             </div>
                                             <div class="col-md-6 mb-2">
                                                 <div class="form-floating">
-                                                    <input type="email" id="mail" class="form-control w-75"
+                                                    <input type="email" id="mail" class="form-control"
                                                         placeholder="Your Email">
                                                     <label for="mail" class="form-label">Your Email :</label>
                                                     <div id="mailError" class="invalid-feedback"></div>
@@ -360,8 +360,8 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-6 col-lg-4 mt-3">
-                                                <button type="button" id="send_message" class="btn">Send
+                                            <div class="col-12 col-md-6 col-lg-4 mt-3 text-center text-md-start">
+                                                <button type="button" id="send_message" class="btn w-100">Send
                                                     Message</button>
                                             </div>
                                         </div>
